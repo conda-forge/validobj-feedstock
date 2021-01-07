@@ -5,9 +5,13 @@ Home: https://github.com/Zaharid/validobj
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/validobj-feedstock/blob/master/LICENSE.txt)
 
 Summary: Validobj gives you valid objects
+
+Development: https://github.com/Zaharid/validobj
+
+Documentation: https://validobj.readthedocs.io/
 
 Validobj is library that takes semistructured data (for example JSON and YAML
 configuration files) and converts it to more structured Python objects. It
