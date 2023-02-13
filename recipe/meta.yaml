@@ -1,5 +1,5 @@
 {% set name = "validobj" %}
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06f9c79f412b93cec27b7b58c187f4b41c1124cac6d7d01ffd8e7af15274daea
+  sha256: 71b8a3e791d92952cedcc2e80d3b454f66183556706cd698124fb7e6021c19da
 
 build:
   noarch: python
