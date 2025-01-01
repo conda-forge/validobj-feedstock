@@ -6,22 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 088497f29c9c10e61406897232826a68a744d2effcb5fee6bdb1d89bd9b5e3c2
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: flit install
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - flit
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - validobj
 
