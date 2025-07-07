@@ -14,6 +14,7 @@
 !/recipe/**
 !/.ci_support/**
 
+
 # Since we ignore files/folders recursively, any folders inside
 # build_artifacts gets ignored which trips some build systems.
 # To avoid that we 'un-ignore' all files/folders recursively
@@ -22,3 +23,8 @@
 /build_artifacts
 
 *.pyc
+
+# Rattler-build's artifacts are in `output` when not specifying anything.
+/output
+# Pixi's configuration
+.pixi
