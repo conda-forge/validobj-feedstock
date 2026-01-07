@@ -11,17 +11,19 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: flit install
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - flit
   run:
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - validobj
 
